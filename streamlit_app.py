@@ -10,11 +10,11 @@ from datetime import datetime
 
 # ========== CONFIGURA TU CONEXIÓN ==========
 DB_PARAMS = {
-    "database": "postgres",
-    "user": "postgres.meznwxccdwgzefxnhnzn",
-    "password": "MBWHThWy9jyVlwhz",
-    "host": "aws-0-us-west-1.pooler.supabase.com",
-    "port": "5432"
+    "database": st.secrets["database"],
+    "user": st.secrets["user"],
+    "password": st.secrets["password"],
+    "host": st.secrets["host"],
+    "port": st.secrets["port"]
 }
 
 # ========== FUNCIONES AUXILIARES ==========
